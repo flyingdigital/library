@@ -283,15 +283,20 @@ def checkTimePeriod(seatId):
 
 
 # 需要学习的时间  分钟
-learningTime = 120
+learningTime = 180
+
 # 当前年月日
 year = str(time.localtime().tm_year)
 month = time.localtime().tm_mon
 day = time.localtime().tm_mday
 if month < 10:
     month = '0' + str(month)
+else:
+    month = str(month)
 if day < 10:
     day = '0' + str(day)
+else:
+    day = str(day)
 
 nowDate = year + '-' + month + '-' + day
 
